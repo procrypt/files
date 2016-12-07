@@ -1,2 +1,1 @@
-# images
-Blog Images
+# Files for blog.
