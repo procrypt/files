@@ -1,3 +1,5 @@
+#Getting started with OpenShift
+
 [OpenShift](https://www.openshift.org) is Red Hat's PaaS (Platform-as-a-Service) that allow developers to quickly develop, host, and scale applications in cloud.
 Based on top of Docker containers and the Kubernetes container cluster manager, OpenShift adds developer and operational centric tools to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams and applications.
 
@@ -109,7 +111,7 @@ For creating the OpenShift artifacts from Dockerfile we will you [Kompose](https
 ```bash
    $ oc login
    Authentication required for https://192.168.121.96:8443 (openshift)
-   Username: admin
+   Username: developer
    Password: 
    Login successful.
    
@@ -131,7 +133,7 @@ For creating the OpenShift artifacts from Dockerfile we will you [Kompose](https
     to build a new example application in Ruby.
 ```
  
-We need to change the security context in OpenShift since by default OpenShift doesn't allows to run container with root access. We need to login with OpenShift administrator to make the changes.
+We need to change the security context in OpenShift since by default OpenShift doesn't allow any container to run with root access. We need to login with OpenShift admin to make the changes.
 
 ```bash
     $ oc login -u system:admin
